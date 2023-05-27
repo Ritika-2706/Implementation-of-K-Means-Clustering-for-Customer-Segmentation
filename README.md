@@ -73,7 +73,7 @@ plt.title("Customer Segments")
 ## data.head() function
 ![Output](ml1.png)
 ## data.info()
-![Output](ml2.png)
+![Output](ml6.png)
 ## data.isnull().sum() function
 ![Output](ml3.png)
 ## Elbow method Graph
