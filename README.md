@@ -42,7 +42,7 @@ for i in range(1,11):
   kmeans.fit(data.iloc[:,3:])
   wcss.append(kmeans.inertia_)
   
-plt.plot(range(1,11),wcss,color="#fc0345")
+plt.plot(range(1,11),wcss)
 plt.xlabel("No of Customers")
 plt.ylabel("wcss")
 plt.title("Elbow method")
@@ -59,11 +59,11 @@ df1 = data[data["cluster"]==1]
 df2 = data[data["cluster"]==2]
 df3 = data[data["cluster"]==3]
 df4 = data[data["cluster"]==4]
-plt.scatter(df0["Annual Income (k$)"],df0["Spending Score (1-100)"],c="#00FE1E",label="cluster0")
-plt.scatter(df1["Annual Income (k$)"],df1["Spending Score (1-100)"],c="#fc0345",label="cluster1")
-plt.scatter(df2["Annual Income (k$)"],df2["Spending Score (1-100)"],c="#03a9fc",label="cluster2")
-plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"],c="#fc2503",label="cluster3")
-plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"],c="#0345fc",label="cluster4")
+plt.scatter(df0["Annual Income (k$)"],df0["Spending Score (1-100)"],c="purple",label="cluster0")
+plt.scatter(df1["Annual Income (k$)"],df1["Spending Score (1-100)"],c="pink",label="cluster1")
+plt.scatter(df2["Annual Income (k$)"],df2["Spending Score (1-100)"],c="violet",label="cluster2")
+plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"],c="lavender",label="cluster3")
+plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"],c="magenta",label="cluster4")
 plt.legend()
 plt.title("Customer Segments")
 
